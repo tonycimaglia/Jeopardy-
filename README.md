@@ -15,6 +15,7 @@ https://trello.com/b/FHpniQnu/jeopardy
 
 Wireframe Photos:
 
+https://imgur.com/YmcLOte
 
 Technologies used:
 
