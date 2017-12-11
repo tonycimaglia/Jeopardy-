@@ -21,7 +21,6 @@ const columnOneAnswers = {
 }
 
 let score = 0
-
 // I need to pull a question from that object and display it as a prompt to the user. 
 // I need a way to check and see if the user's answer (to lower case) matches the...
 // solution that I have stored for that question.
@@ -35,6 +34,7 @@ $('p.100').click(function() {
     alert("I'm Sorry, that's incorrect.")
     score -= 100 
   }
+  $('#score').html(score)
 })
 
 
