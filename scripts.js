@@ -14,10 +14,10 @@ const columnOneQuestions = {
 
 const columnOneAnswers = {
   oneHundred: 'javascript',
-  twoHundred: 'answer1',
-  threeHundred: 'answer2',
-  fourHundred: 'answer3',
-  fiveHundred: 'answer4',
+  twoHundred: 'answer2',
+  threeHundred: 'answer3',
+  fourHundred: 'answer4',
+  fiveHundred: 'answer5',
 }
 
 let score = 0
@@ -35,9 +35,29 @@ $('p.100').click(function() {
     score -= 100 
   }
   $('#score').html(score)
+  $('p.100').html("blank")
 })
 
+// Function to keep code DRY
 
+function checkAnswerAndUpdateScore(Question, questionAnswer, userAnswer, pointValue) {
+  let userAnswer = prompt(Question)
+  if (userAnswer.toLocaleLowerCase() === questionAnswer) {
+    alert('Corect!!!')
+    score += pointValue
+  } else {
+    alert("I'm Sorry, that's incorrect.")
+    score -= pointValue
+  }
+  $('#score').html(score)
+}
+
+// whats changing
+// value of quesiton. points, user answer, solution
+//whats staying the same
+// alert, question
 // need to add or subtract the valaue of the question to the score
+
+
 //after a user clicks on an element and answers a question, its contents ($ amount)
 // need to be removed from the dom.
