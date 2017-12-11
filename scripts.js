@@ -1,23 +1,36 @@
 $(document).ready(function () {
   console.log('the dom is loaded')
 })
-
-$('p').click(function() {
-  let usersAnswer = prompt(question from object)
-  let questionSolution = answer from object
-  if (usersAnswer === questionSolution) {
-    alert('Correct!!!')
-    $('h2').html(+ 100)
-  } else {
-    alert("I'm Sorry, that's incorrect.")
-    $('h2').html(+ 100)
-  }
   
 // I need to create an object that stores all of my questions and answers.
-// I need a way to test to see if a user's answer from a prompt matches the answer
-// that corresponds to the question they selected
-// I need those 
+// I need to pull a question from that object and display it as a prompt to the user. 
+// I need a way to check and see if the user's answer (to lower case) matches the...
+// solution that I have stored for that question.
 
-const columnOneQuestions
+const columnOneQuestions = {
+  oneHundred: 'A coding language that was created by Brendan Ike in just 10 days.',
+  twoHundred: 'question 2',
+  threeHundred: 'question 3',
+  fourHundred: 'question 4',
+  fiveHundred: 'question 5',
+}
 
+const columnOneAnswers = {
+  oneHundred: 'javascript',
+  twoHundred: 'answer1',
+  threeHundred: 'answer2',
+  fourHundred: 'answer3',
+  fiveHundred: 'answer4',
+}
+
+
+$('p.100').click(function() {
+  let usersAnswer = prompt(columnOneQuestions.oneHundred)
+  if (usersAnswer.toLocaleLowerCase() === columnOneAnswers.oneHundred) {
+    alert('Correct!!!')
+    $('span').html(+ 100)
+  } else {
+    alert("I'm Sorry, that's incorrect.")
+    $('span').html(- 100) // need to add or subtract the valaue of the question to the score
+  }
 })
