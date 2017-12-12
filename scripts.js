@@ -172,6 +172,7 @@ const columnSixQuestions = {
   },
 }
 
+let questionCount = []
 let score = 0
 // I need to pull a question from that object and display it as a prompt to the user. 
 // I need a way to check and see if the user's answer (to lower case) matches the...
@@ -187,9 +188,13 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
     alert("I'm Sorry, that's incorrect.")
     score -= pointValue
   }
-  $('#score').html(score)
-  $(target).html("blank")
-  $(target).off()
+  $('#score').html(score) // updates score
+  $(target).html("blank") // changes the inner html of the cell to blank
+  $(target).off() //removes event target from each cell
+  questionCount.push('1')
+  if (questionCount.length === 30) {
+    alert("Game Over!")
+  }
 }
 
 // can i append a new p element and then delete the event target so it can't be clicked again.
