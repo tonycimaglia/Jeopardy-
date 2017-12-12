@@ -1,0 +1,45 @@
+body {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ min-height: 100vh;
+}
+
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  justify-content: center;
+  min-height: 15vh;
+}
+
+#gameBoard {
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  border-style: solid
+}
+
+p {
+  border-style: solid
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+

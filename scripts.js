@@ -204,7 +204,6 @@ $('p.1-100').click(function () {
     columnOneQuestions.first.question,
     columnOneQuestions.first.answer,
     columnOneQuestions.first.value)
-    $(event.target).removeEventListener('click')
 })
 
 $('p.1-200').click(function () {
