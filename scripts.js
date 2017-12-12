@@ -172,11 +172,13 @@ const columnSixQuestions = {
   },
 }
 
-let questionCount = []
-let score = 0
+let questionCount = [] //empty array that counts how many questions are answered
+let score = 0 //score that updates depending on whether the question is right/wrong
 // I need to pull a question from that object and display it as a prompt to the user. 
 // I need a way to check and see if the user's answer (to lower case) matches the...
 // solution that I have stored for that question.
+//after a user clicks on an element and answers a question, its contents ($ amount)
+// need to be removed from the dom.
 
 function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
   let userAnswer = prompt(Question)
@@ -188,12 +190,12 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
     alert("I'm Sorry, that's incorrect.")
     score -= pointValue
   }
-  $('#score').html(score) // updates score
-  $(target).html("") // changes the inner html of the cell to blank
-  $(target).off() //removes event target from each cell
+  $('#score').html(score) // updates score in the html
+  $(target).html("") // changes the inner html of the cell to be empty
+  $(target).off() //removes event target from each cell so it can't be clicked again. 
   questionCount.push('1')
   if (questionCount.length === 30) {
-    alert("Game Over!")
+    alert("Game Over!") // game ends when the array is 30.
   }
 }
 
@@ -408,7 +410,3 @@ $('p.6-500').click(function() {
     columnSixQuestions.fifth.answer, 
     columnSixQuestions.fifth.value)
 })
-
-
-//after a user clicks on an element and answers a question, its contents ($ amount)
-// need to be removed from the dom.
