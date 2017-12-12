@@ -3,7 +3,7 @@ body {
  flex-direction: column;
  justify-content: space-around;
  min-height: 100vh;
- background-color: #001499
+ background-color: #001499;
 }
 
 
@@ -17,12 +17,15 @@ h1 {
   min-height: 10vh;
   color: white;
   font-family: 'Bungee', cursive;
+  font-size: 9vh;
+  margin: 0
 }
 
 #gameBoard {
   display: flex;
   justify-content: space-around;
-  min-height: 70vh; 
+  min-height: 70vh;
+  min-width: 96vw;
 }
 
 .column {
@@ -32,27 +35,44 @@ h1 {
 }
 
 h3 {
-  border: 2px solid black;
+  display: flex;
+  border: 3px solid black;
   color: white;
   font-family: helvetica;
   font-weight: bold;
+  width: 16vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 p {
-  border: 2px solid black;
+  display: flex;
+  border: 3px solid black;
   color: rgb(233, 163, 97);
   font-family: helvetica;
+  width: 16vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 6vh;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
 }
 
 .scoreboard {
   display: flex;
   justify-content: center;
-  min-height: 10vh;
+  min-height: 5vh;
 }
 
 h2 {
   color: white;
   font-family: helvetica;
+  margin: 0;
+  font-size: 5vh;
 }
 
 

@@ -189,7 +189,7 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
     score -= pointValue
   }
   $('#score').html(score) // updates score
-  $(target).html("blank") // changes the inner html of the cell to blank
+  $(target).html("") // changes the inner html of the cell to blank
   $(target).off() //removes event target from each cell
   questionCount.push('1')
   if (questionCount.length === 30) {
