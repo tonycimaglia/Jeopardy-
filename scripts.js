@@ -5,21 +5,25 @@ $(document).ready(function () {
 // I need to create an object that stores all of my questions and answers.
 
 const columnOneQuestions = {
-  oneHundred: [100, 'A coding language that was created by Brendan Ike in just 10 days.', 'javascript'],
-  twoHundred: [200, 'question 2', 'answer2'],
-  threeHundred: [300, 'question 3', 'answer3'],
-  fourHundred: [400, 'question 4', 'answer4'],
-  fiveHundred: [500, 'question 5', 'answer5'],
+  first: {
+    question: 'A coding language that was created by Brendan Ike in just 10 days.',
+    answer: 'javascript', 
+    value: 100,
+  },
+  second: [200, 'question 2', 'answer2'],
+  third: [300, 'question 3', 'answer3'],
+  fourth: [400, 'question 4', 'answer4'],
+  fifth: [500, 'question 5', 'answer5'],
 }
 
 let score = 0
 // I need to pull a question from that object and display it as a prompt to the user. 
 // I need a way to check and see if the user's answer (to lower case) matches the...
 // solution that I have stored for that question.
-
+/*
 $('p.100').click(function() {
-  let usersAnswer = prompt(columnOneQuestions.oneHundred[1])
-  if (usersAnswer.toLocaleLowerCase() === columnOneQuestions.oneHundred[2]) {
+  let usersAnswer = prompt(columnOneQuestions.oneHundred[0])
+  if (usersAnswer.toLocaleLowerCase() === columnOneQuestions.oneHundred[1]) {
     alert('Correct!!!')
     score += 100 
   } else {
@@ -29,12 +33,13 @@ $('p.100').click(function() {
   $('#score').html(score)
   $('p.100').html("blank")
 })
-
+*/
 // Function to keep code DRY
 
-function checkAnswerAndUpdateScore(Question, questionAnswer, userAnswer, pointValue) {
+function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
   let userAnswer = prompt(Question)
-  if (userAnswer.toLocaleLowerCase() === questionAnswer) {
+  let target = $(event.target)
+  if (userAnswer.toLowerCase() === questionAnswer) {
     alert('Corect!!!')
     score += pointValue
   } else {
@@ -42,8 +47,16 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, userAnswer, pointVa
     score -= pointValue
   }
   $('#score').html(score)
+  $(target).html("blank")
 }
 
+
+$('p.1-100').click(function() {
+  checkAnswerAndUpdateScore(
+    columnOneQuestions.first.question, 
+    columnOneQuestions.first.answer, 
+    columnOneQuestions.first.value)
+})
 
 
 // whats changing
@@ -55,4 +68,3 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, userAnswer, pointVa
 
 //after a user clicks on an element and answers a question, its contents ($ amount)
 // need to be removed from the dom.
-console.log(columnOneQuestions.oneHundred[0])
