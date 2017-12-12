@@ -1,78 +1,83 @@
 body {
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- min-height: 100vh;
- background-color: #001499;
-}
-
-
-.heading {
-  display: flex;
-  justify-content: center;
-}
-
-h1 {
-  justify-content: center;
-  min-height: 10vh;
-  color: white;
-  font-family: 'Bungee', cursive;
-  font-size: 9vh;
-  margin: 0
-}
-
-#gameBoard {
-  display: flex;
-  justify-content: space-around;
-  min-height: 70vh;
-  min-width: 96vw;
-}
-
-.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: #001499;
+ }
+ 
+ 
+ .heading {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ h1 {
+   justify-content: center;
+   min-height: 10vh;
+   color: white;
+   font-family: 'Bungee', cursive;
+   font-size: 9vh;
+   margin: 0
+ }
+ 
+ #gameBoard {
+   display: flex;
+   justify-content: space-around;
+   min-height: 70vh;
+   min-width: 96vw;
+ }
+ 
+ .column {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ h3 {
+   display: flex;
+   border: 3px solid black;
+   color: white;
+   font-family: helvetica;
+   font-weight: bold;
+   width: 16vw;
+   height: 10vh;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+ }
+ 
+ p {
+   display: flex;
+   border: 3px solid black;
+   color: rgb(233, 163, 97);
+   font-family: helvetica;
+   width: 16vw;
+   height: 10vh;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   font-size: 6vh;
+   text-shadow: 2px 2px black;
+   font-weight: bold;
+ }
 
-h3 {
-  display: flex;
-  border: 3px solid black;
-  color: white;
-  font-family: helvetica;
-  font-weight: bold;
-  width: 16vw;
-  height: 10vh;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+ p:hover { 
+  border: 3px solid white;
 }
+ 
+ .scoreboard {
+   display: flex;
+   justify-content: center;
+   min-height: 5vh;
+ }
+ 
+ h2 {
+   color: white;
+   font-family: helvetica;
+   margin: 0;
+   font-size: 5vh;
+ }
 
-p {
-  display: flex;
-  border: 3px solid black;
-  color: rgb(233, 163, 97);
-  font-family: helvetica;
-  width: 16vw;
-  height: 10vh;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-size: 6vh;
-  text-shadow: 2px 2px black;
-  font-weight: bold;
-}
-
-.scoreboard {
-  display: flex;
-  justify-content: center;
-  min-height: 5vh;
-}
-
-h2 {
-  color: white;
-  font-family: helvetica;
-  margin: 0;
-  font-size: 5vh;
-}
-
+ 
 
