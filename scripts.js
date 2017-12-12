@@ -189,6 +189,7 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
   }
   $('#score').html(score)
   $(target).html("blank")
+  $(target).off()
 }
 
 // can i append a new p element and then delete the event target so it can't be clicked again.
@@ -198,6 +199,7 @@ $('p.1-100').click(function () {
     columnOneQuestions.first.question,
     columnOneQuestions.first.answer,
     columnOneQuestions.first.value)
+    $(event.target).removeEventListener('click')
 })
 
 $('p.1-200').click(function () {
