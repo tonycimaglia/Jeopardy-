@@ -460,6 +460,12 @@ $('p.1-100').click(function () {
 let questionCount = [] //empty array that counts how many questions are answered
 let score = 0 //score that updates depending on whether the question is right/wrong
 const answerButton = $(':input')[1] //assigns answer button to a variable
+const closeModal = document.getElementsByClassName('close')[0];
+closeModal.onclick = function() {
+  questionModal.style.display = "none";
+  // still need to remove the element from the dom if they hit pass 
+}
+
 
 function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
   questionModal.style.display = "block" //opens modal
@@ -470,7 +476,7 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
   $(target).off() //removes event target from each cell so it can't be clicked again. 
   answerButton.onclick = function() { 
     event.preventDefault() // stops submit button from refreshing page
-    if (modalAnswer.value.toLowerCase() === questionAnswer) {
+    if (modalAnswer.value.toLowerCase() === questionAnswer) { // checks user's answer against solution
       alert('Corect!!!')
       score += pointValue
   } else {
