@@ -441,11 +441,11 @@ closeModal.onclick = function() {
 
 
 // add an event listener to the answer button that will 
-const modalAnswer = $(':input')[0] // finds input field
+let modalAnswer = $(':input')[0] // finds input field
 const answerButton = $(':input')[1] //finds the submit for that info field
 
 answerButton.onclick = function() { 
-  userAnswer = modalAnswer.value
+  alert(modalAnswer.value)
 }
 
 
