@@ -83,7 +83,7 @@ body {
 
 
 
- /* The Modal (background) */
+/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -99,7 +99,7 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #001B93;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -108,6 +108,13 @@ body {
 
 /* The Close Button */
 .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.answer {
   color: #aaa;
   float: right;
   font-size: 28px;
