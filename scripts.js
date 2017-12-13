@@ -438,3 +438,15 @@ closeModal.onclick = function() {
     questionModal.style.display = "none";
     // still need to remove the element from the dom if they hit pass 
 }
+
+
+// add an event listener to the answer button that will 
+const modalAnswer = $(':input')[0] // finds input field
+const answerButton = $(':input')[1] //finds the submit for that info field
+
+answerButton.onclick = function() { 
+  userAnswer = modalAnswer.value
+}
+
+
+// pull the info in the form field out
