@@ -18,7 +18,8 @@ body {
    color: white;
    font-family: 'Bungee', cursive;
    font-size: 9vh;
-   margin: 0
+   margin: 0;
+   text-shadow: 5px 5px black;
  }
  
  #gameBoard {
@@ -58,6 +59,7 @@ body {
    align-items: center;
    margin: 0;
    font-size: 6vh;
+   font-size: 6vw;
    text-shadow: 2px 2px black;
    font-weight: bold;
  }
@@ -66,12 +68,12 @@ body {
   border: 3px solid white;
 }
  
- .scoreboard {
-   display: flex;
-   justify-content: center;
-   min-height: 5vh;
- }
- 
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  min-height: 5vh;
+}
+
 h2 {
   color: white;
   font-family: helvetica;
@@ -86,7 +88,7 @@ span {
   font-size: 5vh;
 }
 
-
+/* used a CSS Tricks tutorial for modal help */ 
 
 /* The Modal (background) */
 .modal {
@@ -104,18 +106,27 @@ span {
 
 /* Modal Content/Box */
 .modal-content {
+  display: flex;
+  flex-direction: column;
   background-color: #001B93;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid white;
   width: 80%; /* Could be more or less, depending on screen size */
   height: 60%;
+}
+form {
+
+}
+input[type=text] {
+  width: 50%;
+  border: 2px solid white;
+  border-radius: 4px;
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
+  color white;
   font-size: 28px;
   font-weight: bold;
 }
