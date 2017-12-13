@@ -119,13 +119,6 @@ span {
   font-size: 28px;
   font-weight: bold;
 }
-/* answer button */
-.answer {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
 .close:hover,
 .close:focus {
@@ -134,9 +127,3 @@ span {
   cursor: pointer;
 }
 
-.answer:hover,
-.answer:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
