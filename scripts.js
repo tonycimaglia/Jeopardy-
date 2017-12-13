@@ -421,7 +421,7 @@ $('p.6-500').click(function() {
 
 
 // Get the modal
-const modal = document.getElementById('myModal');
+const questionModal = document.getElementById('questionModal');
 
 // Get the button that opens the modal
 const openModal = document.getElementById('openModal');
@@ -431,10 +431,10 @@ const closeModal = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal 
 openModal.onclick = function() {
-  modal.style.display = "block";
+  questionModal.style.display = "block";
   $('#questionContent').html(columnOneQuestions.first.question)
 }
 // When the user clicks on <span> (x), close the modal
 closeModal.onclick = function() {
-    modal.style.display = "none";
+    questionModal.style.display = "none";
 }
