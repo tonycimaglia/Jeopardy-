@@ -432,9 +432,20 @@ const closeModal = document.getElementsByClassName('close')[0];
 // When the user clicks on the button, open the modal 
 openModal.onclick = function() {
   questionModal.style.display = "block";
-  $('#questionContent').html(columnOneQuestions.first.question)
+  $('#questionContent').html(columnOneQuestions.first.question) //insterts question
 }
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on pass, close the modal
 closeModal.onclick = function() {
     questionModal.style.display = "none";
+    // still need to remove the element from the dom if they hit pass 
+}
+
+//trying to make an answer modal
+
+const answerModal = document.getElementById('answerModal')
+
+const openAnswerModal = document.getElementsByClassName('Answer');
+
+openAnswerModal.onclick = function() {
+  answerModal.style.display = "block";
 }
