@@ -4,70 +4,68 @@ body {
   justify-content: space-around;
   min-height: 100vh;
   background-color: #001499;
- }
- 
- 
- .heading {
-   display: flex;
-   justify-content: center;
- }
- 
- h1 {
-   justify-content: center;
-   min-height: 10vh;
-   color: white;
-   font-family: 'Bungee', cursive;
-   font-size: 9vh;
-   margin: 0;
-   text-shadow: 5px 5px black;
- }
- 
- #gameBoard {
-   display: flex;
-   justify-content: space-around;
-   min-height: 70vh;
-   min-width: 96vw;
- }
- 
- .column {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- 
- h3 {
-   display: flex;
-   border: 3px solid black;
-   color: white;
-   font-family: helvetica;
-   font-weight: bold;
-   width: 16vw;
-   height: 10vh;
-   justify-content: center;
-   align-items: center;
-   margin: 0;
- }
- 
- p {
-   display: flex;
-   border: 3px solid black;
-   color: rgb(233, 163, 97);
-   font-family: helvetica;
-   width: 16vw;
-   height: 10vh;
-   justify-content: center;
-   align-items: center;
-   margin: 0;
-   font-size: 6vh;
-   font-size: 6vw;
-   text-shadow: 2px 2px black;
-   font-weight: bold;
- }
+}
 
- p:hover { 
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  justify-content: center;
+  min-height: 10vh;
+  color: white;
+  font-family: 'Bungee', cursive;
+  font-size: 9vh;
+  margin: 0;
+  text-shadow: 5px 5px black;
+}
+
+#gameBoard {
+  display: flex;
+  justify-content: space-around;
+  min-height: 70vh;
+  min-width: 96vw;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  display: flex;
+  border: 3px solid black;
+  color: white;
+  font-family: helvetica;
+  font-weight: bold;
+  width: 16vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+p {
+  display: flex;
+  border: 3px solid black;
+  color: rgb(233, 163, 97);
+  font-family: helvetica;
+  width: 16vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 6vh;
+  font-size: 6vw;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+}
+
+p:hover { 
   border: 3px solid white;
 }
- 
+
 .scoreboard {
   display: flex;
   justify-content: center;
@@ -114,19 +112,25 @@ span {
   border: 1px solid white;
   width: 80%; /* Could be more or less, depending on screen size */
   height: 60%;
+  justify-content: center;
+  align-items: center;
 }
-form {
+#questionContent {
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+}
 
-}
 input[type=text] {
   width: 50%;
   border: 2px solid white;
   border-radius: 4px;
+  color: blue; 
 }
 
 /* The Close Button */
 .close {
-  color white;
+  color: white;
   font-size: 28px;
   font-weight: bold;
 }

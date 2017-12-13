@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 const columnOneQuestions = {
   first: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
+    question: 'A CODING LANGUAGE THAT WAS CREATED BY BRENDAN IKE IN JUST 10 DAYS.',
     answer: 'javascript',
     value: 100,
   },
