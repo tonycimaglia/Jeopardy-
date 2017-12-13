@@ -171,7 +171,7 @@ const columnSixQuestions = {
     value: 500,
   },
 }
-
+/*
 let questionCount = [] //empty array that counts how many questions are answered
 let score = 0 //score that updates depending on whether the question is right/wrong
 // I need to pull a question from that object and display it as a prompt to the user. 
@@ -410,7 +410,7 @@ $('p.6-500').click(function() {
     columnSixQuestions.fifth.answer, 
     columnSixQuestions.fifth.value)
 })
-
+*/
 // When the modal opens
 // User should have the option to answer or pass. 
 // Either way, the p element needs to be removed from the dom
@@ -424,10 +424,10 @@ $('p.6-500').click(function() {
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById('openModal');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
