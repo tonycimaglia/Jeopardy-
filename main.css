@@ -72,14 +72,19 @@ body {
    min-height: 5vh;
  }
  
- h2 {
-   color: white;
-   font-family: helvetica;
-   margin: 0;
-   font-size: 5vh;
- }
+h2 {
+  color: white;
+  font-family: helvetica;
+  margin: 0;
+  font-size: 5vh;
+}
 
- 
+span {
+  color: white;
+  font-family: helvetica;
+  margin: 0;
+  font-size: 5vh;
+}
 
 
 
