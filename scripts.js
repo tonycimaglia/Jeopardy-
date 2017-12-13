@@ -460,10 +460,9 @@ $('p.1-100').click(function () {
 let questionCount = [] //empty array that counts how many questions are answered
 let score = 0 //score that updates depending on whether the question is right/wrong
 const answerButton = $(':input')[1] //assigns answer button to a variable
-const closeModal = document.getElementsByClassName('close')[0];
-closeModal.onclick = function() {
+const closeModal = document.getElementsByClassName('close')[0]; // creates a pass button
+closeModal.onclick = function() { // pass button will close modal on click
   questionModal.style.display = "none";
-  // still need to remove the element from the dom if they hit pass 
 }
 
 

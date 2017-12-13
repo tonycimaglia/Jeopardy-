@@ -24,8 +24,6 @@ h1 {
 #gameBoard {
   display: flex;
   justify-content: space-around;
-  min-height: 70vh;
-  min-width: 96vw;
 }
 .column {
   display: flex;
@@ -36,8 +34,9 @@ h1 {
 h3 {
   display: flex;
   border: 3px solid black;
+  border-width: 13px 3px 10px 3px;
   color: white;
-  font-family: helvetica;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   width: 16vw;
   height: 10vh;
@@ -58,7 +57,7 @@ p {
   margin: 0;
   font-size: 6vh;
   font-size: 6vw;
-  text-shadow: 2px 2px black;
+  text-shadow: 4px 4px black;
   font-weight: bold;
 }
 
