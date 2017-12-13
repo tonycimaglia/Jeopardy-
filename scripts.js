@@ -419,34 +419,75 @@ $('p.6-500').click(function() {
 // then, they need to see another modal telling them if they're right or wrong,
 // and then the score should update accordingly 
 
-
+/*
 // Get the modal
 const questionModal = document.getElementById('questionModal');
 
 // Get the button that opens the modal
-const openModal = document.getElementById('openModal');
 
 // Get the <span> element that closes the modal
 const closeModal = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal 
-openModal.onclick = function() {
-  questionModal.style.display = "block";
-}
 // When the user clicks on pass, close the modal
 closeModal.onclick = function() {
     questionModal.style.display = "none";
     // still need to remove the element from the dom if they hit pass 
 }
 
-
 // add an event listener to the answer button that will 
 let modalAnswer = $(':input')[0] // finds input field
 const answerButton = $(':input')[1] //finds the submit for that info field
 
 answerButton.onclick = function() { 
-  alert(modalAnswer.value)
+  modalAnswer.value
 }
 
 
 // pull the info in the form field out
+/*
+$('p.1-100').click(function () {
+  questionModal.style.display = "block"
+  $('#questionContent').html(columnOneQuestions.first.question)
+  answerButton.onclick = function() { 
+    if( modalAnswer.value === columnOneQuestions.first.answer) {
+    alert('WOOT!')
+    }
+  }
+})
+*/
+
+let questionCount = [] //empty array that counts how many questions are answered
+let score = 0 //score that updates depending on whether the question is right/wrong
+const answerButton = $(':input')[1] //assigns answer button to a variable
+
+function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
+  questionModal.style.display = "block" //opens modal
+  $('#questionContent').html(Question) //changes modal html to the question
+  let modalAnswer = $(':input')[0] //modal answer will equal the input of the modal form
+  let target = $(event.target) 
+  answerButton.onclick = function() {
+    if (modalAnswer.value.toLowerCase() === questionAnswer) {
+      alert('Corect!!!')
+      score += pointValue
+  } else {
+      alert("I'm Sorry, that's incorrect.")
+      score -= pointValue
+  }
+  $('#score').html(score) // updates score in the html
+  $(target).html("") // changes the inner html of the cell to be empty
+  $(target).off() //removes event target from each cell so it can't be clicked again. 
+  questionCount.push('1')
+  if (questionCount.length === 30) {
+    alert("Game Over!") // game ends when the array is 30.
+  }
+  }
+
+}
+
+$('p.1-100').click(function () {
+  checkAnswerAndUpdateScore(
+    columnOneQuestions.first.question,
+    columnOneQuestions.first.answer,
+    columnOneQuestions.first.value)
+})
