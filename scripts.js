@@ -6,28 +6,28 @@ $(document).ready(function () {
 
 const columnOneQuestions = {
   first: {
-    question: 'A CODING LANGUAGE THAT WAS CREATED BY BRENDAN IKE IN JUST 10 DAYS.',
-    answer: 'javascript',
+    question: 'THIS IS WHERE IT ALL BEGAN',
+    answer: 'the local',
     value: 100,
   },
   second: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE SECOND TIME WE EVER SAW EACH OTHER',
+    answer: 'ecco',
     value: 200,
   },
   third: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'YOUR FRIENDS CALLED ME FOOD DUDE AFTER THIS DATE ON  THE ROOF OF...',
+    answer: 'the ralph',
     value: 300,
   },
   fourth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "YOU FOUND OUT I'M JUST AS BAD AS YOU ARE WITH UMBRELLAS IN THIS CITY.",
+    answer: 'charlotte',
     value: 400,
   },
   fifth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'I TOOK YOU TO SEE BEIRUT ON THE NIGHT OF THE THUNDERSTORM AT THIS VENUE',
+    answer: 'buckhead theatre',
     value: 500,
   },
 }
