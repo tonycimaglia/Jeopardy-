@@ -125,6 +125,12 @@ span {
   text-shadow: 5px 5px black;
 }
 
+#whatIs {
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+}
+
 div.inputField {
   display: flex;
   flex-direction: row;
@@ -135,6 +141,11 @@ input[type=text] {
   border: 2px solid white;
   border-radius: 4px;
   color: blue; 
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+  font-size: 5vh;
+  size: 6vh;
 }
 
 form input[type="text"] { 
