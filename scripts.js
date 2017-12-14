@@ -34,28 +34,28 @@ const columnOneQuestions = {
 
 const columnTwoQuestions = {
   first: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'TALKING LIKE A JERK, EXCEPT YOU ARE AN ACTUAL JERK, AND LIVING PROOF, THAT SOMETIMES FRIENDS ARE MEAN.',
+    answer: 'lcd soundsystem',
     value: 100,
   },
   second: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "CALL OFF WORK LET'S LAY. CALL IT LOVER'S DAY",
+    answer: 'tv on the radio',
     value: 200,
   },
   third: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "I DON'T FEEL TOO WELL, CAUSE I'M LOOKING AT YOU.",
+    answer: 'jay reatard',
     value: 300,
   },
   fourth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'AND YOUR MOMMY SUDDDENLY BECOMES YOUR DADDY',
+    answer: 'm83',
     value: 400,
   },
   fifth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "NEVER THOUGHT I'D LET A RUMOR RUIN MY MOONLIGHT",
+    answer: 'the killers',
     value: 500,
   },
 }
