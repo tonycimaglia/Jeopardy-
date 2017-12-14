@@ -24,6 +24,7 @@ h1 {
 #gameBoard {
   display: flex;
   justify-content: space-around;
+  align-items: space-around;
 }
 .column {
   display: flex;
@@ -76,6 +77,9 @@ h2 {
   font-family: helvetica;
   margin: 0;
   font-size: 5vh;
+  text-shadow: 4px 4px black;
+  padding: 
+  border: 5px solid black;
 }
 
 span {
@@ -120,11 +124,26 @@ span {
   text-shadow: 5px 5px black;
 }
 
+div.inputField {
+  display: flex;
+  flex-direction: row;
+}
+
 input[type=text] {
   width: 50%;
   border: 2px solid white;
   border-radius: 4px;
   color: blue; 
+}
+
+form input[type="text"] { 
+  background-color: #001B93; /*block background color*/
+  color: #ffffff; 
+  }
+
+form input[type="submit"] {
+  background-color: #001B93;
+  color: white;
 }
 
 /* The Close Button */
@@ -136,7 +155,7 @@ input[type=text] {
 
 .close:hover,
 .close:focus {
-  color: black;
+  border: 3px solid white;
   text-decoration: none;
   cursor: pointer;
 }
