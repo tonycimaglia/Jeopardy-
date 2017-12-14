@@ -7,7 +7,7 @@ I created a Jeopardy Game where a user will answer trivia questions. The user cl
 
 Bit Balloon:
 
-http://eloquent-mestorf-260da5.bitballoon.com/
+http://cimagliajeopardy.bitballoon.com/
 
 Trello Board:
 
