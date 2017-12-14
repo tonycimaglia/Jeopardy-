@@ -116,7 +116,7 @@ span {
   border: 1px solid white;
   width: 80%; /* Could be more or less, depending on screen size */
   height: 60%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 #questionContent {
@@ -134,6 +134,7 @@ span {
 div.inputField {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 input[type=text] {
@@ -156,6 +157,11 @@ form input[type="text"] {
 form input[type="submit"] {
   background-color: #001B93;
   color: white;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+  font-size: 5vh;
+  border: none;
 }
 
 /* The Close Button */
@@ -163,12 +169,17 @@ form input[type="submit"] {
   color: white;
   font-size: 28px;
   font-weight: bold;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+  font-size: 5vh;
 }
 
-.close:hover,
-.close:focus {
+form input[type="submit"]:hover {
   border: 3px solid white;
-  text-decoration: none;
-  cursor: pointer;
+}
+
+.close:hover {
+  border: 3px solid white;
 }
 
