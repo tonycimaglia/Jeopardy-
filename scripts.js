@@ -180,7 +180,7 @@ const closeModal = $('.close')[0]; // creates a pass button
 closeModal.onclick = function () { // pass button will close modal on click
   questionModal.style.display = "none";
   questionCount.push('1')
-  if (questionCount.length === 3) {
+  if (questionCount.length === 30) {
     alert("Game Over!") // game ends when the array is 30.
   }
 }

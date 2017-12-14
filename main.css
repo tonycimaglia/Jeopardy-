@@ -81,6 +81,7 @@ h2 {
   font-size: 5vh;
   text-shadow: 4px 4px black;
   border: 5px solid black;
+  padding: 4px;
 }
 
 span {
@@ -135,6 +136,7 @@ div.inputField {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 
 input[type=text] {
@@ -152,7 +154,13 @@ input[type=text] {
 form input[type="text"] { 
   background-color: #001B93; /*block background color*/
   color: #ffffff; 
-  }
+}
+
+.modalAnswer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 form input[type="submit"] {
   background-color: #001B93;
@@ -173,6 +181,8 @@ form input[type="submit"] {
   font-weight: bold;
   text-shadow: 5px 5px black;
   font-size: 5vh;
+  padding: 2px;
+
 }
 
 form input[type="submit"]:hover {
