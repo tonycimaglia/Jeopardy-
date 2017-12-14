@@ -16,12 +16,12 @@ const columnOneQuestions = {
     value: 200,
   },
   third: {
-    question: 'YOUR FRIENDS CALLED ME FOOD DUDE AFTER THIS DATE ON  THE ROOF OF...',
+    question: 'YOUR FRIENDS CALLED ME FOOD DUDE AFTER THIS DATE ON THE ROOF OF',
     answer: 'the ralph',
     value: 300,
   },
   fourth: {
-    question: "YOU FOUND OUT I'M JUST AS BAD AS YOU ARE WITH UMBRELLAS IN THIS CITY.",
+    question: "YOU FOUND OUT I'M EQUALLY UNLUCKY WITH UMBRELLAS HERE",
     answer: 'charlotte',
     value: 400,
   },
@@ -62,56 +62,56 @@ const columnTwoQuestions = {
 
 const columnThreeQuestions = {
   first: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "THE BEST FOOD WE'VE EVER HAD, WHERE WE'RE ALWAYS TREATED LIKE FAMILY.",
+    answer: 'staplehouse',
     value: 100,
   },
   second: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "WE'RE NEVER ALLOWED TO BUY ANYTHING FOR OURSELVES WHEN WE GO HERE TOGETHER",
+    answer: 'criminal records',
     value: 200,
   },
   third: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE BEST COCKTAILS AND OYSTERS IN TOWN',
+    answer: 'kimball house',
     value: 300,
   },
   fourth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "YOU COULDN'T RESIST THE PORK BELLY HERE EVEN THOUGH YOU WERE A VEGETARIAN",
+    answer: 'gato',
     value: 400,
   },
   fifth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'EVERY TIME WE MAKE A MAJOR LIFE DECISION, WE ALWAYS END UP HERE',
+    answer: 'ticonderoga club',
     value: 500,
   },
 }
 
 const columnFourQuestions = {
   first: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE NAME OF THE JUDGE WHO MARRIED US',
+    answer: 'kimi kondo',
     value: 100,
   },
   second: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE DISAPPOINTING RESTAURANT WE ATE IN ON OUR WEDDING NIGHT',
+    answer: 'canlis',
     value: 200,
   },
   third: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'YOUR "FAVORITE PLACE IN THE ENTIRE WORLD"',
+    answer: 'bloedel reserve',
     value: 300,
   },
   fourth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE NAME OF THE HOTEL WE STAYED IN',
+    answer: 'in at the market',
     value: 400,
   },
   fifth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THIS IS WHAT WE HAD TO DO TO REACH THE COURTHOUSE ON TIME (VERB)',
+    answer: 'run',
     value: 500,
   },
 }
