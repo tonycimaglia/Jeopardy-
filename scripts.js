@@ -474,7 +474,6 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
   $(target).html("") // changes the inner html of the cell to be empty
   $(target).off() //removes event target from each cell so it can't be clicked again. 
   answerButton.onclick = function () {
-    questionCount.push('1')
     event.preventDefault() // stops submit button from refreshing page
     if (modalAnswer.value.toLowerCase() === questionAnswer) { // checks user's answer against solution
       alert('Corect!!!')
