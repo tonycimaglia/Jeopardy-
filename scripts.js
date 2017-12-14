@@ -146,28 +146,28 @@ const columnFiveQuestions = {
 
 const columnSixQuestions = {
   first: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'WE GOT ENGAGED UNDER THE STARS WITH THAT CIGAR SMOKING MAN HERE',
+    answer: 'freedom park',
     value: 100,
   },
   second: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'YOU LEFT UNIT 51 TO GO WORK ON THIS TYPE OF FLOOR AT EMORY',
+    answer: 'pulmonary vascualar',
     value: 200,
   },
   third: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'I LEFT MY CAREER TO GO TO SCHOOL HERE',
+    answer: 'general assembly',
     value: 300,
   },
   fourth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'WE SAW OUR FAVORITE BAND FOR THE SECOND TIME IN THIS CITY',
+    answer: 'chicago',
     value: 400,
   },
   fifth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE MOST RIDICULOUS, OVER THE TOP MEAL OF OUR LIVES',
+    answer: 'alinea',
     value: 500,
   },
 }
