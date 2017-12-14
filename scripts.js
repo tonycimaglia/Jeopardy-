@@ -118,28 +118,28 @@ const columnFourQuestions = {
 
 const columnFiveQuestions = {
   first: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: "THE NAME OF THE BEDROOM'S OLD PAINT COLOR",
+    answer: 'chestnut stallion',
     value: 100,
   },
   second: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THESE CHANGED THE WAY EVERYTHING SOUNDS IN THE HOUSE',
+    answer: 'blinds',
     value: 200,
   },
   third: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE SOURCE OF ALL OF OUR LIVING ROOM DANCE PARTIES',
+    answer: 'record player',
     value: 300,
   },
   fourth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'WE REPAINTED THE BATHROOM THIS COLOR',
+    answer: 'whipped mint',
     value: 400,
   },
   fifth: {
-    question: 'A coding language that was created by Brendan Ike in just 10 days.',
-    answer: 'javascript',
+    question: 'THE THING THE CATS ARE BENT ON DESTROYING',
+    answer: 'couch',
     value: 500,
   },
 }
@@ -461,7 +461,7 @@ let questionCount = [] //empty array that counts how many questions are answered
 let score = 0 //score that updates depending on whether the question is right/wrong
 const answerButton = $(':input')[1] //assigns answer button to a variable
 const closeModal = document.getElementsByClassName('close')[0]; // creates a pass button
-closeModal.onclick = function() { // pass button will close modal on click
+closeModal.onclick = function () { // pass button will close modal on click
   questionModal.style.display = "none";
 }
 
@@ -470,25 +470,25 @@ function checkAnswerAndUpdateScore(Question, questionAnswer, pointValue) {
   questionModal.style.display = "block" //opens modal
   $('#questionContent').html(Question) //changes modal html to the question
   let modalAnswer = $(':input')[0] //modal answer will equal the input of the modal form
-  let target = $(event.target) 
+  let target = $(event.target)
   $(target).html("") // changes the inner html of the cell to be empty
   $(target).off() //removes event target from each cell so it can't be clicked again. 
-  answerButton.onclick = function() { 
+  answerButton.onclick = function () {
     questionCount.push('1')
     event.preventDefault() // stops submit button from refreshing page
     if (modalAnswer.value.toLowerCase() === questionAnswer) { // checks user's answer against solution
       alert('Corect!!!')
       score += pointValue
-  } else {
+    } else {
       alert("I'm Sorry, that's incorrect.")
       score -= pointValue
-  }
-  questionModal.style.display = "none" // 
-  $('#score').html(score) // updates score in the html
-  questionCount.push('1')
-  if (questionCount.length === 30) {
-    alert("Game Over!") // game ends when the array is 30.
-  }
+    }
+    questionModal.style.display = "none" // 
+    $('#score').html(score) // updates score in the html
+    questionCount.push('1')
+    if (questionCount.length === 30) {
+      alert("Game Over!") // game ends when the array is 30.
+    }
   }
 
 }
@@ -668,38 +668,38 @@ $('p.5-500').click(function () {
     columnFiveQuestions.fifth.value)
 })
 
-$('p.6-100').click(function() {
+$('p.6-100').click(function () {
   checkAnswerAndUpdateScore(
-    columnSixQuestions.first.question, 
-    columnSixQuestions.first.answer, 
+    columnSixQuestions.first.question,
+    columnSixQuestions.first.answer,
     columnSixQuestions.first.value)
 })
 
-$('p.6-200').click(function() {
+$('p.6-200').click(function () {
   checkAnswerAndUpdateScore(
-    columnSixQuestions.second.question, 
-    columnSixQuestions.second.answer, 
+    columnSixQuestions.second.question,
+    columnSixQuestions.second.answer,
     columnSixQuestions.second.value)
 })
 
-$('p.6-300').click(function() {
+$('p.6-300').click(function () {
   checkAnswerAndUpdateScore(
-    columnSixQuestions.third.question, 
-    columnSixQuestions.third.answer, 
+    columnSixQuestions.third.question,
+    columnSixQuestions.third.answer,
     columnSixQuestions.third.value)
 })
 
-$('p.6-400').click(function() {
+$('p.6-400').click(function () {
   checkAnswerAndUpdateScore(
-    columnSixQuestions.fourth.question, 
-    columnSixQuestions.fourth.answer, 
+    columnSixQuestions.fourth.question,
+    columnSixQuestions.fourth.answer,
     columnSixQuestions.fourth.value)
 })
 
-$('p.6-500').click(function() {
+$('p.6-500').click(function () {
   checkAnswerAndUpdateScore(
-    columnSixQuestions.fifth.question, 
-    columnSixQuestions.fifth.answer, 
+    columnSixQuestions.fifth.question,
+    columnSixQuestions.fifth.answer,
     columnSixQuestions.fifth.value)
 })
 
