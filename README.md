@@ -18,11 +18,11 @@ https://trello.com/b/FHpniQnu/jeopardy
 
 ### Technologies used:
 
-#####Languages: 
+Languages: 
 
 JavaScript, HTML, CSS,
 
-#####Tools:  
+Tools:  
 
 jQuery
 
