@@ -1,29 +1,32 @@
 # Jeopardy-
-Project 1
 
-Description:
+## Description:
 
-I created a Jeopardy Game where a user will answer trivia questions. The user clicks on dollar amounts in a grid of 30 boxes. Every time they get an answer right, they are awarded the dollar amount for that question and it is displayed in a scoreboard. If they miss, the dollar amount is subtracted from the score. The game ends after the user has answered all of the questions.
+This is the first web application I ever created. Jeopardy is a trivia game where the user answers questions. They select dollar amounts from a gameboard of categories that are associated with a question. Every time they get an answer right, they are awarded the dollar amount for that question and it is displayed in a scoreboard. If they miss, the dollar amount is subtracted from the score. The game ends after the user has answered all of the questions.
 
-Bit Balloon:
+##### Game Link:
 
 http://cimagliajeopardy.bitballoon.com/
 
-Trello Board:
-
-https://trello.com/b/FHpniQnu/jeopardy
-
-Wireframe Photos:
+##### Wireframe Photos:
 
 https://imgur.com/YmcLOte
 
-Technologies used:
+##### User Stories:
 
-Languages: JavaScript, HTML, CSS, jQuery
+https://trello.com/b/FHpniQnu/jeopardy
 
-Tools: 
+### Technologies used:
 
-Version 2:
+#####Languages: 
+
+JavaScript, HTML, CSS,
+
+#####Tools:  
+
+jQuery
+
+## Version 2:
 
 In version two I would like to:
 
